@@ -16,15 +16,6 @@ with open(csvpath, newline='') as csvfile:
     for row in csvreader:
         count= count +1
 
-#count the candidates
-total_votes = len(candidate)
-
-#Count Khan
-if candidate = "Khan":
-    sum(voter_id) for x in 
-
-
- 
 
         
 print("Election Results")
@@ -32,6 +23,16 @@ print("-------------------------------")
 print("Total Votes: " +str(count))
 print("-------------------------------")
 print(Khan_total)
+
+#Create output location for text file
+text_path = os.path.join("Resources", "PyPoll_Summary.txt")
+
+with open(text_path, "w+") as text_file:
+    text_file.write("Election Results {PyPoll_Summary} : \n")
+    text_file.write("-------------------------------------------\n")
+    text_file.write("Election Results")
+    text_file.write("-------------------------------------------\n")
+    text_file.write("Total Votes: " +str(count))
 
 ##Questions for TA: How to sum candidates votes?
 ## Example: IF Candidate = Khan, SUM votes
