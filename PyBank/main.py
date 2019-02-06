@@ -56,22 +56,22 @@ print("Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greate
 print("------------------------------------------------------")
 
 #Create output location for text file
-write_file = f"pybank_results_summary_{csvpath +1}.txt"
+text_path = os.path.join("Resources", "PyBank_Summary.txt")
 
-filewriter = open(write_file,mode = "w")
-
+with open(text_path, "w+") as text_file:
+    
 #Create text file
-filewriter.write(f"Financial Analysis for {csvfile}:\n")
-filewriter.write("-------------------------------------------\n")
-filewriter.write("Financial Analysis")
-filewriter.write("-------------------------------------------\n")
-filewriter.write("Total Months: " + str(count) + "\n")
-filewriter.write("Total Profits: " +"$" + str(total_profit) + "\n")
-filewriter.write("Average change: " + "$" + str(average_change_profits) + "\n")
-filewriter.write("Greatest Increase in Profits: " + str(increase_date) + " ($" + str(greatest_increase_profits) + ")\n")
-filewriter.write("Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits) + ")\n")
-filewriter.write("-------------------------------------------\n")
-filewriter.write.close()
+    text_file.write("Financial Analysis {PyBank_Summary} : \n")
+    text_file.write("-------------------------------------------\n")
+    text_file.write("Financial Analysis")
+    text_file.write("-------------------------------------------\n")
+    text_file.write("Total Months: " + str(count) + "\n")
+    text_file.write("Total Profits: " +"$" + str(total_profit) + "\n")
+    text_file.write("Average change: " + "$" + str(average_change_profits) + "\n")
+    text_file.write("Greatest Increase in Profits: " + str(increase_date) + " ($" + str(greatest_increase_profits) + ")\n")
+    text_file.write("Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits) + ")\n")
+    text_file.write("-------------------------------------------\n")
+    text_file.write.close()
 
 
 #Why doesn't this create a text file in the folder???
