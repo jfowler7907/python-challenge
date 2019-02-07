@@ -74,7 +74,7 @@ with open(text_path, "w+") as text_file:
     text_file.write.close()
 
 
-#Why doesn't this create a text file in the folder???
+
 
 
 

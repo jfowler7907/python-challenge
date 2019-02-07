@@ -1,0 +1,4 @@
+Election Results {PyPoll_Summary} : 
+-------------------------------------------
+Election Results-------------------------------------------
+Total Votes: 3521002

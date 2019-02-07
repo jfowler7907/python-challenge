@@ -22,7 +22,7 @@ print("Election Results")
 print("-------------------------------")
 print("Total Votes: " +str(count))
 print("-------------------------------")
-print(Khan_total)
+
 
 #Create output location for text file
 text_path = os.path.join("Resources", "PyPoll_Summary.txt")
